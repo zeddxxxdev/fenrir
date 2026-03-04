@@ -1,3 +1,23 @@
+# Fenrir Frontend Dashboard
+A simple only UI/UX implementation of fenrir given design.
+
+## Techstack Used
+- NextJS v16 (/app)
+- Typescript
+- TailwindCSS
+- Radix UI
+- Prettier
+- Next-Themes
+
+## Miscellaneous
+
+Although there were way too many stuff that i would have done, but shortage or time kicks soo hard,
+stuffs that are missing:
+  - Animation transition on data renders (like table data, logs, terminal logs etc,).
+  - Responsiveness for mobile screen (currently it is looking good on desktop only).
+  - Way too clean approach (adding more prettier plugins to make the unused imports gone for good).
+  - Although in register page even if you do not provide any input value you will still get logged it as i did not used any validations at all.
+
 ```
 fenrir
 ├─ .prettierrc
