@@ -11,11 +11,10 @@ import {
 } from "@/components/ui/table"
 import { Progress } from "@/components/ui/progress"
 import TableStatusBadge from "@/components/shared/badge/table-status.badge"
-import { tables } from "@/mocks"
 import { VULNERABILITY_COLORS } from "@/constants/dashboard.constants"
 import { useIsLoading } from "@/hooks/use-is-loading"
-import { Skeleton } from "@/components/ui/skeleton"
 import { Loader } from "lucide-react"
+import { tables } from "@/constants/tables.constants"
 
 {
   /* <Loader className="absolute top-1/2 left-1/2 animate-spin text-muted" /> */

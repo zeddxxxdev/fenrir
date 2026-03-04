@@ -1,6 +1,6 @@
+import { included } from "@/constants/tables.constants"
 import { Check } from "lucide-react"
 import { IoStarSharp } from "react-icons/io5"
-import { included } from "@/mocks"
 
 export default function HeroSection() {
   return (

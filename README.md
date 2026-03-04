@@ -1,4 +1,3 @@
-
 ```
 fenrir
 ├─ .prettierrc
@@ -89,7 +88,8 @@ fenrir
 │  │  ├─ auth.constants.tsx
 │  │  ├─ dashboard.constants.tsx
 │  │  ├─ scans.constants.tsx
-│  │  └─ sidebar.constants.tsx
+│  │  ├─ sidebar.constants.tsx
+│  │  └─ tables.constants.tsx
 │  ├─ contexts
 │  │  └─ theme-provider.tsx
 │  ├─ fonts
