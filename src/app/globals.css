@@ -1,26 +1,147 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #ffffff;
+  --background: #FFF;
   --foreground: #171717;
+
+  --primary: #0E9E9E;
+  --primary-foreground: #DBF0F0;
+
+  --muted: #64748B;
+  --muted-foreground: #9F9F9F;
+
+  --notification: #FA7215;
+
+  --critical-severity: #C6005B;
+  --critical-severity-foreground: #FBE6F3;
+
+  --high-severity: #BA4C00;
+  --high-severity-foreground: #FFE3CD;
+
+  --medium-severity: #BA9501;
+  --medium-severity-foreground: #FFFBEB;
+
+  --low-severity: #3465FB;
+  --low-severity-foreground: #E9F1FE;
+
+  --success-dark: #1C7647;
+  --success: #28C560;
+  --success-foreground: #EEF9F1;
+
+  --google-foreground: #F9F2EF;
+  --meta-foreground: #3E6DDF;
+
+  --destructive: #EF4444;
+  --destructive-foreground: #FEEEEE;
+
+  --card: #fff;
+
+  --page: #F9FAFB;
+  --high: #F97316;
+  --medium: #F59E0D;
+  --low: #83CC16;
+}
+
+.dark {
+  --background: #0A0F13;
+  --foreground: #FFF;
+
+  --primary: #0E9E9E;
+  --primary-foreground: #DBF0F0;
+
+  --muted: #64748B;
+  --muted-foreground: #9F9F9F;
+
+  --notification: #FA7215;
+
+  --critical-severity: #C6005B;
+  --critical-severity-foreground: #FBE6F3;
+
+  --high-severity: #BA4C00;
+  --high-severity-foreground: #FFE3CD;
+
+  --medium-severity: #BA9501;
+  --medium-severity-foreground: #FFFBEB;
+
+  --low-severity: #3465FB;
+  --low-severity-foreground: #E9F1FE;
+
+  --success-dark: #1C7647;
+  --success: #28C560;
+  --success-foreground: #EEF9F1;
+
+  --google-foreground: #F9F2EF;
+  --meta-foreground: #3E6DDF;
+
+  --destructive: #EF4444;
+  --destructive-foreground: #FEEEEE;
+  --card: #151C23;
+
+  --page: #F9FAFB;
+  --high: #F97316;
+  --medium: #F59E0D;
+  --low: #83CC16;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-google-foreground: var(--google-foreground);
+  --color-meta-foreground: var(--meta-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-critical-severity: var(--critical-severity);
+  --color-critical-severity-foreground: var(--critical-severity-foreground);
+  --color-high-severity: var(--high-severity);
+  --color-high-severity-foreground: var(--high-severity-foreground);
+  --color-medium-severity: var(--medium-severity);
+  --color-medium-severity-foreground: var(--medium-severity-foreground);
+  --color-low-severity: var(--low-severity);
+  --color-low-severity-foreground: var(--low-severity-foreground);
+
+  --color-high: var(--high);
+  --color-medium: var(--medium);
+  --color-low: var(--low);
+
+  --color-notification: var(--notification);
+
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-success-dark: var(--success-dark);
+
+  --color-page: var(--page);
+  --color-card: var(--card);
+
+  --container-8xl: 1460px;
+
+  --font-inter: var(--font-inter-variable);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100svh;
+}
+
+@utility auth_layout_background {
+  background-image: url('/backgrounds/auth-background.webp');
+  background-repeat: no-repeat;
+  background-origin: top;
+  background-size: cover;
+}
+
+@utility scrollbar-gutter {
+  scrollbar-gutter: stable;
 }
